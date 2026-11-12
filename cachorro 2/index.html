@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Cachorros</title>
+
+    <style>
+
+       * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    color: #D96F83;
+}
+
+body {
+    background-color: #FFF5F4;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #D96F83;
+    background-color: #F8D9DC;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+    #galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+}
+
+        #galeria img {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border: 5px solid #fad6d6;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+    button{
+    background-color: #D96F83;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    }
+
+    label{
+         background-color: #D96F83;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    color:#D96F83;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Galeria de cachorros</h1>
+
+Selecione uma raça
+    <label for="racas"> 
+        <select id="racas"> Selecione uma raça
+            <option value="">Selecione uma raça</option>
+        </select>
+    </label>
+    
+Quantidade
+    <label for="quantidade"> 
+        <input type="number" id="quantidade" min="1" max="10" value="3">
+    </label>
+
+    <button id="aleatorios">Mostrar aleatórios</button>
+    <button id="porRaca">Mostrar 3 da raca</button>
+
+    <p id="mensagem"></p>
+
+    <div id="galeria"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
